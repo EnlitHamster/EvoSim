@@ -3,7 +3,7 @@ out/
 .idea/inspectionProfiles/Project_Default.xml
 .idea/misc.xml
 *.log
-.idea/libraries/lib.xml
+.idea/libraries/*
 .idea/dictionaries/sandr.xml
 .idea/modules.xml
 simulation.iml
