@@ -3,11 +3,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
 <BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="440.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="simulation.controllers.BasicController">
+            prefHeight="440.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulation.controllers.BasicController">
     <center>
         <GridPane fx:id="map" gridLinesVisible="true" BorderPane.alignment="CENTER">
             <columnConstraints>
@@ -38,6 +41,7 @@
     </center>
     <bottom>
         <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Button fx:id="tickSwitch" mnemonicParsing="false" onAction="#swtch" text="Start"/>
             <Button fx:id="tickNext" mnemonicParsing="false" onAction="#tick" text="Next"/>
             <Label fx:id="tickCount" text="Tick: 0"/>
         </ToolBar>
