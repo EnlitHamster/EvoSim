@@ -1,0 +1,9 @@
+out/
+.idea/workspace.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+*.log
+.idea/libraries/lib.xml
+.idea/dictionaries/sandr.xml
+.idea/modules.xml
+simulation.iml
