@@ -22,7 +22,7 @@ public class Launcher extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/simulation/views/basicGrid.fxml"));
         BorderPane root = loader.load();
 
-        Grid grid = new Grid(10, 10);
+        Grid grid = new Grid(100, 100);
         grid.generate(new TerrainGenerator());
         grid.populate((rows, cols, max) -> {
             List<Entity> entities = new ArrayList<>();
